@@ -36,6 +36,8 @@ public class User {
     @NotNull
     private String lastName;
 
+    private int age;
+
     @Column(name = "enabled")
     private boolean enabled;
 
@@ -48,12 +50,14 @@ public class User {
                 @NotEmpty @NotNull String password,
                 @NotEmpty @NotNull String firstName,
                 @NotEmpty @NotNull String lastName,
+                int age,
                 boolean enabled){
         this.username = username;
         this.email = email;
         this.setPassword(password);
         this.firstName = firstName;
         this.lastName = lastName;
+        this.age = age;
         this.enabled = enabled;
     }
 
@@ -104,6 +108,14 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public boolean isEnabled() {

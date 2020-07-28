@@ -1,12 +1,31 @@
 
 :root {
     --error-message: red;
+    --error-animation: boldAnimation 1s ease-in-out infinite alternate;
 }
+
+
 
 #user-error-message {
     color: var(--error-message);
+    animation: var(--error-animation);
+}
+
+@keyframes boldAnimation {
+    from {
+        font-size: 1em;
+    }
+    to {
+        font-size: 1.1em;
+    }
 }
 
 #password-error-message {
     color: var(--error-message);
+    animation: var(--error-animation);
+}
+
+#age-error-message {
+    color: var(--error-message);
+    animation: var(--error-animation);
 }

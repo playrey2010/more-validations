@@ -14,14 +14,14 @@ public class CommandLineRunnerBean implements CommandLineRunner {
 
     public void run(String... args){
 
-        User user = new User("bart", "bart@domain.com", "bart", "Bart", "Simpson",
+        User user = new User("bart", "bart@domain.com", "bart", "Bart", "Simpson", 12,
                 true);
         Role userRole = new Role("bart", "ROLE_USER");
         userRepository.save(user);
         roleRepository.save(userRole);
 
         User admin = new User("super", "super@domain.com", "super",
-                "Super", "Hero", true);
+                "Super", "Hero", 1000, true);
         Role adminRole1 = new Role("super", "ROLE_ADMIN");
         Role adminRole2 = new Role("super", "ROLE_USER");
         userRepository.save(admin);
