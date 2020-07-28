@@ -4,9 +4,7 @@
     --error-animation: boldAnimation 1s ease-in-out infinite alternate;
 }
 
-
-
-#user-error-message {
+.error-messages {
     color: var(--error-message);
     animation: var(--error-animation);
 }
@@ -18,14 +16,4 @@
     to {
         font-size: 1.1em;
     }
-}
-
-#password-error-message {
-    color: var(--error-message);
-    animation: var(--error-animation);
-}
-
-#age-error-message {
-    color: var(--error-message);
-    animation: var(--error-animation);
 }

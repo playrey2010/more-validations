@@ -1,5 +1,3 @@
-document.getElementById("user-error-message").style.animationPlayState = "paused";
-
 function validate() {
     // result boolean variable
     var formIsOkay = true;
@@ -15,14 +13,11 @@ function validate() {
 
     // reset previous error messages
     var errorMessages= document.getElementsByTagName("span");
-
-
-
-    // begin validation
     for (let i = 0; i< errorMessages.length; i++){
         errorMessages[i].innerHTML = "";
     }
 
+    // begin validation
     // check if username field is empty
     if (!username) {
         userError.innerHTML = "Please enter username";

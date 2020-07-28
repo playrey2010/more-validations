@@ -33,7 +33,7 @@
     Age
     <input type="number" id="age" placeholder="Your age"
            th:field="*{age}"/>
-    <span id="age-error-message"></span>
+    <span class="error-messages" id="age-error-message"></span>
     <br/>
 
     Email
@@ -47,12 +47,12 @@
     Username
     <input type="text" id="username" placeholder="Username"
            th:field="*{username}"/>
-    <span id="user-error-message"></span>
+    <span class="error-messages" id="user-error-message"></span>
     <br/>
     Password
     <input type="password" id="password" placeholder="Password"
            th:field="*{password}"/>
-    <span id="password-error-message"></span>
+    <span class="error-messages" id="password-error-message"></span>
     <br/>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
